@@ -6,6 +6,8 @@ import Button from '@material-ui/core/Button';
 import config from '../config'
 import TableComponent from './resultTable';
 import Grid from '@material-ui/core/Grid';
+import * as Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
 class Input extends Component {
@@ -59,6 +61,11 @@ class Input extends Component {
             }
 
         });
+
+        var Scroll = require('react-scroll');   
+        var scroll = Scroll.animateScroll;
+ 
+        scroll.scrollToBottom();
     }
 
 
