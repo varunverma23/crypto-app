@@ -37,9 +37,9 @@ Open http://localhost:3000 in the web browser
 
      a. Create a table in Dynamo DB with Name Crypto and InputId as Primary partition key.
   
-     b. Create a new IAM role with AWSLambdaBasicExecutionRole and DynamoDB read/write role for table you created in previous     step a.
+     b. Create a new IAM role 'CryptoLambda' with AWSLambdaBasicExecutionRole and DynamoDB read/write role for table you created in previous step a.
   
-     c. Install the lambda function available in nodejs-api-backend folder in your AWS env.
+     c. Install the lambda function available in nodejs-api-backend folder in your AWS env using the role created in step b.
      
      d. Create the API savecryptodata which will have a PUT method and call the lambda function created in step c
 
@@ -55,7 +55,7 @@ Note - Replace the arn in the yaml files before using.
 - provide the API that retrieves filtered data based on the parameters
 passed while calling the API.
 
-- validating json schema
+- validating json schema and provide better UX
 
 - more options to enter the input
 
