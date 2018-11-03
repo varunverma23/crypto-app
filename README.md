@@ -68,7 +68,7 @@ passed while calling the API.
 
 - The buy price and buy time is always the first price in the quotes for a curreny.
 
-
+- The app works in Google Chrome, Firefox, Safari and Edge. But it does not support IE 11 and below versions. I have not implemented polyfill.
 
 
 
